@@ -63,8 +63,8 @@ class DatabaseHelper {
             $remindersColumnId INTEGER PRIMARY KEY,
             $remindersColumnName TEXT NOT NULL,
             $remindersColumnStreak INTEGER NOT NULL,
-            $remindersColumnUserId INTEGER NOT NULL DEFAULT 1,
-            FOREIGN KEY ($remindersColumnUserId) REFERENCES $userTable($userColumnId)
+            $remindersColumnUserId STRING NOT NULL DEFAULT 1,
+            FOREIGN KEY ($remindersColumnUserId) REFERENCES $userTable($userColumnFireBaseId)
           )
           ''');
 
@@ -79,13 +79,36 @@ class DatabaseHelper {
     await db.execute('''
           INSERT INTO $achievementsTable ($achievementsColumnName, $achievementsColumnStreak)
           VALUES 
-            ('One Day at a Time', 1),
-            ('Two In A Row!', 2),
-            ('Three-rific!', 3),
-            ('Four-ward Progress!', 4),
-            ('Five-tastic!', 5),
-            ('Six-cess Achiever!', 6),
-            ('Lucky Seven Streak!', 7)
+('One Day at a Time', 1),
+('Two In A Row!', 2),
+('Three-rific!', 3),
+('Four-ward Progress!', 4),
+('Five-tastic!', 5),
+('Six-cess Achiever!', 6),
+('Lucky Seven Streak!', 7),
+('Super Eight!', 8),
+('Niner in a Row!', 9),
+('Tenacious Ten!', 10),
+('Eleven in Heaven!', 11),
+('Twelve-dacious!', 12),
+('Thirteen's a Charm!', 13),
+('Fabulous Fourteen!', 14),
+('Fifteen's Fantastic!', 15),
+('Sweet Sixteen!', 16),
+('Sensational Seventeen!', 17),
+('Great Eighteen!', 18),
+('Nineteen Ninety Nine!', 19),
+('Terrific Twenty!', 20),
+('Twenty-One Gun Salute!', 21),
+('Twenty-Two Too Good!', 22),
+('Twenty-Three Skidoo!', 23),
+('Twenty-Four Carat Streak!', 24),
+('Twenty-Five Alive!', 25),
+('Twenty-Six on the Bounce!', 26),
+('Twenty-Seven Eleven!', 27),
+('Twenty-Eight Great!', 28),
+('Twenty-Nine Fine!', 29),
+('Thirty and Thriving!', 30)
           ''');
   }
 
@@ -117,8 +140,9 @@ class DatabaseHelper {
       where: '$remindersColumnId = ?',
       whereArgs: [id],
     );
-    
-  }  Future<int> insertUser({
+  }
+
+  Future<int> insertUser({
     required String firebaseId,
     required String email,
   }) async {
