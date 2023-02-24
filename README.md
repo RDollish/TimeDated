@@ -2,7 +2,7 @@
 
 # TimeDated
 
-TimeDated is a mobile application that allows users to set daily reminders for various tasks or habits they would like to maintain. The application provides users with achievements for maintaining their daily streaks. This application was built using flutter.
+TimeDated is a mobile application that allows users to set daily reminders for various tasks or habits they would like to maintain. The application provides users with achievements for maintaining their daily streaks. This application was built using Flutter.
 
 ## Features
 
