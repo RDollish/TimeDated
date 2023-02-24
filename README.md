@@ -1,16 +1,26 @@
-# timedated
+<img width="255" alt="TimeDatedPhoto" src="https://user-images.githubusercontent.com/110746023/221074476-ef4adcde-26c5-4972-bf09-0d66ab550f37.png">
 
-A new Flutter project.
+# TimeDated
 
-## Getting Started
+TimeDated is a mobile application that allows users to set daily reminders for various tasks or habits they would like to maintain. The application provides users with achievements for maintaining their daily streaks. This application was built using flutter.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Daily reminders
+- Streak tracking
+- Achievements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Currently, the user can create daily reminders, mark them completed, and unlock achievements depending on how long their streak is.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Upcoming Features
+
+- Reminders for multiple times per day
+- Reminders for certain days of the week
+- Notifications for users to complete their task at a specific time of day
+- App available for download on mobile stores
+
+## Potential Future Features
+
+- Show how many times in the last 30 days the reminder has been completed
+- Scoreboard to show highest achievements for other users to see anonymously
+- Social features to share progress with friends
